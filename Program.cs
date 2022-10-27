@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System;
 using System.Runtime.ConstrainedExecution;
 
 Console.WriteLine("Hello, World!");
@@ -100,15 +101,103 @@ Console.WriteLine("Hello, World!");
 
 //Il software deve chiedere per 10 volte all’utente di inserire un numero.
 //Il programma stampa la somma di tutti i numeri inseriti.
-int y = 0;
-for (int i = 0; i < 10; i++)
-{
-    Console.WriteLine("inserisci un numero");
-    int x = Convert.ToInt32(Console.ReadLine());
-    y += x;
-}
-Console.WriteLine("La somma dei tuoi numeri è: " + y);
+//int y = 0;
+//for (int i = 0; i < 10; i++)
+//{
+//    Console.WriteLine("inserisci un numero");
+//    int x = Convert.ToInt32(Console.ReadLine());
+//    y += x;
+//}
+//Console.WriteLine("La somma dei tuoi numeri è: " + y);
 
 //Snack4.
 
 //Calcola la somma e la media dei numeri da 2 a 10.
+//int x = 0;
+//for (int i = 2; i < 11; i++)
+//{
+//    x += i;
+//    Console.WriteLine("questa è x: " + x);
+//}
+//Console.WriteLine("la somma dei valori è: " + x);
+//Console.WriteLine("la media dei valori è: " + x/9);
+
+
+//Operatore modulo
+
+//Snack5.
+
+//Il software chiede all’utente di inserire un numero.
+//Console.WriteLine("Inserisci un numero");
+//int x = Convert.ToInt32(Console.ReadLine());
+//if (x % 2 == 0)
+//{
+//    //Se il numero inserito è pari, stampa il numero
+//    Console.WriteLine("il tuo numero è pari: " + x);
+//}
+//else
+//{
+//    //se è dispari, stampa il numero successivo.
+//    Console.WriteLine("il tuo numero è dispari: " + x + ", il numero successivo è: " + (x + 1));
+//}
+
+//Array
+
+//Snack6.
+//In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby.
+//string[] guests = { "Ika", "Sandro", "Edo", "Ale", "Simo" };
+////Chiedi all’utente il suo nome e comunicagli se può partecipare o meno alla festa.
+//Console.WriteLine("Inserisci il tuo nome");
+//string name = Console.ReadLine();
+//bool invited = false;
+
+//for (int i = 0; i < guests.Length; i++)
+//{
+//    if (name == guests[i])
+//    {
+//        invited = true;
+//    }
+//}
+
+//if (invited == true)
+//{
+//    Console.WriteLine("Sei accettato alla festa!");
+//}
+//else
+//{
+//    Console.WriteLine("Non sei ammesso alla festa!");
+//}
+
+
+//Snack7.
+//Crea un array vuoto.
+//int[] arrayNum = new int[6];
+////Chiedi per 6 volte all’utente di inserire un numero
+//Console.WriteLine("Inserisci un numero: ");
+//for (int i = 0; i < arrayNum.Length; i++)
+//{
+//    Console.WriteLine("il tuo array: ");
+//    int myNum = Convert.ToInt32(Console.ReadLine());
+//    //se è dispari inseriscilo nell’array
+//    if (myNum % 2 != 0)
+//    {
+//        arrayNum[i] = myNum;
+//    }
+//}
+//Console.WriteLine("il tuo array:");
+//for (int i = 0; i < arrayNum.Length; i++)
+//{
+//    Console.WriteLine("Posizione" + i + ": " + arrayNum[i]);
+//}
+
+
+//Snack8.
+//Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in
+//posizione dispari.
+int[] numbers = { 2, 3, 7, 10, 4, 6 };
+int sum = 0;
+for (int i = 0; i < numbers.Length; i+=2)
+{
+    sum += numbers[i];
+}
+Console.WriteLine("La somma è: " + sum);
