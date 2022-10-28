@@ -220,17 +220,63 @@ Console.WriteLine("Hello, World!");
 //Snack10.Fai inserire un numero, che chiameremo N, all’utente.
 //Genera N array, ognuno formato da 10 numeri casuali tra 1 e 100.
 //Ogni volta che ne crei uno, stampalo a schermo.
-Console.WriteLine("Inserisci un numero");
-int N = Convert.ToInt32(Console.ReadLine());
-Random random = new Random();
-for (int i = 0; i < N; i++)
+//Console.WriteLine("Inserisci un numero");
+//int N = Convert.ToInt32(Console.ReadLine());
+//Random random = new Random();
+//for (int i = 0; i < N; i++)
+//{
+//    int[] array = new int[10];
+//    Console.WriteLine("L'array numero " + (i + 1) + " è: ");
+//    for (int j = 0; j < 10; j++)
+//    {
+//        array[j] = random.Next(1, 100);
+//        Console.Write(array[j] + "  ");
+//    }
+//    Console.WriteLine();
+//}
+
+//Snack 1
+//Dare la possibilità di inserire due parole.
+//Verificare tramite una funzione che le due parole abbiano la stessa lunghezza. Se hanno la stessa lunghezza, stamparle entrambe, altrimenti stampare la più lunga delle due.
+//Console.WriteLine("Inserisci la prima parola");
+//string firstWord = Console.ReadLine();
+
+//Console.WriteLine("Inserisci la seconda parola");
+//string secondWord = Console.ReadLine();
+
+//myFunction(firstWord, secondWord);
+
+//void myFunction(string firstWord, string secondWord)
+//{
+//    if (firstWord.Length == secondWord.Length)
+//    {
+//        Console.WriteLine("le tue parole sono: " + firstWord + ", " + secondWord);
+//    }
+//    else if(firstWord.Length > secondWord.Length)
+//    {
+//        Console.WriteLine("la tua parola più lunga è: " + firstWord);
+//    }
+//    else
+//    {
+//        Console.WriteLine("la tua parola più lunga è: " + secondWord);
+//    }
+//}
+
+
+//Snack 2
+//Scrivere una funzione per verificare se un numero è pari o dispari.
+//Quindi chiedere un numero all’utente e comunicargli se è pari o dispari.
+void pariDispari(int num)
 {
-    int[] array = new int[10];
-    Console.WriteLine("L'array numero" + (i + 1) + "è: ");
-    for (int j = 0; j < 10; j++)
+    if(num % 2 == 0)
     {
-        array[j] = random.Next(1, 100);
-        Console.Write(array[j] + "  ");
+        Console.WriteLine("il tuo numero è pari");
     }
-    Console.WriteLine();
+    else
+    {
+        Console.WriteLine("il tuo numero è dispari");
+    }
 }
+Console.WriteLine("inserisci un numero");
+int num = Convert.ToInt32(Console.ReadLine());
+pariDispari(num);
