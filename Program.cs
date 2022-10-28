@@ -114,13 +114,13 @@ Console.WriteLine("Hello, World!");
 
 //Calcola la somma e la media dei numeri da 2 a 10.
 //int x = 0;
-//for (int i = 2; i < 11; i++)
+//for (int i = 2; i <= 10; i++)
 //{
 //    x += i;
 //    Console.WriteLine("questa è x: " + x);
 //}
 //Console.WriteLine("la somma dei valori è: " + x);
-//Console.WriteLine("la media dei valori è: " + x/9);
+//Console.WriteLine("la media dei valori è: " + x / 9);
 
 
 //Operatore modulo
@@ -156,6 +156,7 @@ Console.WriteLine("Hello, World!");
 //    if (name == guests[i])
 //    {
 //        invited = true;
+//        break;
 //    }
 //}
 
@@ -194,10 +195,42 @@ Console.WriteLine("Hello, World!");
 //Snack8.
 //Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in
 //posizione dispari.
-int[] numbers = { 2, 3, 7, 10, 4, 6 };
-int sum = 0;
-for (int i = 0; i < numbers.Length; i+=2)
+//int[] numbers = { 2, 3, 7, 10, 4, 6 };
+//int sum = 0;
+//for (int i = 1; i < numbers.Length; i+=2)
+//{
+//    sum += numbers[i];
+//}
+//Console.WriteLine("La somma è: " + sum);
+
+
+//Snack9. Crea un array vuoto e chiedi all’utente un numero da inserire nell’array.
+//Continua a chiedere i numeri all’utente e a inserirli nell’array, fino a quando la
+//somma degli elementi è minore di 50.
+//int[] numeri = new int[50];
+//int somma = 0;
+//while (somma < 50)
+//{
+//    Console.WriteLine("Inserisci un numero");
+//    somma += Convert.ToInt32(Console.ReadLine());
+//}
+
+
+//Random
+//Snack10.Fai inserire un numero, che chiameremo N, all’utente.
+//Genera N array, ognuno formato da 10 numeri casuali tra 1 e 100.
+//Ogni volta che ne crei uno, stampalo a schermo.
+Console.WriteLine("Inserisci un numero");
+int N = Convert.ToInt32(Console.ReadLine());
+Random random = new Random();
+for (int i = 0; i < N; i++)
 {
-    sum += numbers[i];
+    int[] array = new int[10];
+    Console.WriteLine("L'array numero" + (i + 1) + "è: ");
+    for (int j = 0; j < 10; j++)
+    {
+        array[j] = random.Next(1, 100);
+        Console.Write(array[j] + "  ");
+    }
+    Console.WriteLine();
 }
-Console.WriteLine("La somma è: " + sum);
