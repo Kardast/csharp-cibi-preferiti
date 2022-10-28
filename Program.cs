@@ -244,21 +244,22 @@ Console.WriteLine("Hello, World!");
 //Console.WriteLine("Inserisci la seconda parola");
 //string secondWord = Console.ReadLine();
 
-//myFunction(firstWord, secondWord);
+//Console.WriteLine(myFunction(firstWord, secondWord));
 
-//void myFunction(string firstWord, string secondWord)
+
+//string myFunction(string firstWord, string secondWord)
 //{
 //    if (firstWord.Length == secondWord.Length)
 //    {
-//        Console.WriteLine("le tue parole sono: " + firstWord + ", " + secondWord);
+//        return firstWord + ", " + secondWord;
 //    }
-//    else if(firstWord.Length > secondWord.Length)
+//    else if (firstWord.Length > secondWord.Length)
 //    {
-//        Console.WriteLine("la tua parola più lunga è: " + firstWord);
+//        return firstWord;
 //    }
 //    else
 //    {
-//        Console.WriteLine("la tua parola più lunga è: " + secondWord);
+//        return secondWord;
 //    }
 //}
 
@@ -266,17 +267,17 @@ Console.WriteLine("Hello, World!");
 //Snack 2
 //Scrivere una funzione per verificare se un numero è pari o dispari.
 //Quindi chiedere un numero all’utente e comunicargli se è pari o dispari.
-void pariDispari(int num)
-{
-    if(num % 2 == 0)
-    {
-        Console.WriteLine("il tuo numero è pari");
-    }
-    else
-    {
-        Console.WriteLine("il tuo numero è dispari");
-    }
-}
-Console.WriteLine("inserisci un numero");
-int num = Convert.ToInt32(Console.ReadLine());
-pariDispari(num);
+//string pariDispari(int num)
+//{
+//    if (num % 2 == 0)
+//    {
+//        return "il tuo numero è pari";
+//    }
+//    else
+//    {
+//        return "il tuo numero è dispari";
+//    }
+//}
+//Console.WriteLine("inserisci un numero");
+//int num = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine(pariDispari(num));
